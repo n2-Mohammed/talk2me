@@ -1,0 +1,194 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFFFFF">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="25dp"
+				android:paddingTop="15dp"
+				android:paddingRight="25dp"
+				android:paddingBottom="50dp"
+				android:gravity="left|top"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30dp"
+					android:text="Login or Register"
+					android:textSize="18sp"
+					android:textColor="#000000"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:text="Welcome to Talk2Me"
+					android:textSize="16sp"
+					android:textColor="#BDBDBD"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="35dp"
+					android:text="Email"
+					android:textSize="14sp"
+					android:textColor="#9E9E9E" />
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="match_parent"
+					android:layout_height="48dp"
+					android:paddingTop="12dp"
+					android:paddingBottom="5dp"
+					android:background="@android:color/transparent"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:textColorHint="#9E9E9E"
+					android:singleLine="true" />
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:padding="8dp"
+					android:background="#EEEEEE"
+					android:orientation="horizontal" />
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="35dp"
+					android:text="Username"
+					android:textSize="14sp"
+					android:textColor="#9E9E9E" />
+				<LinearLayout
+					android:id="@+id/linear9"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/edittext2"
+						android:layout_width="match_parent"
+						android:layout_height="48dp"
+						android:paddingTop="12dp"
+						android:paddingBottom="5dp"
+						android:background="@android:color/transparent"
+						android:textSize="14sp"
+						android:textColor="#000000"
+						android:textColorHint="#9E9E9E"
+						android:singleLine="true" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:padding="8dp"
+					android:background="#EEEEEE"
+					android:orientation="horizontal" />
+				<TextView
+					android:id="@+id/textview9"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="35dp"
+					android:text="Password"
+					android:textSize="14sp"
+					android:textColor="#9E9E9E" />
+				<EditText
+					android:id="@+id/edittext3"
+					android:layout_width="match_parent"
+					android:layout_height="48dp"
+					android:paddingTop="13dp"
+					android:paddingBottom="5dp"
+					android:background="@android:color/transparent"
+					android:textSize="14sp"
+					android:textColor="#000000"
+					android:textColorHint="#9E9E9E"
+					android:singleLine="true"
+					android:inputType="textPassword" />
+				<LinearLayout
+					android:id="@+id/linear7"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:padding="8dp"
+					android:background="#EEEEEE"
+					android:orientation="horizontal" />
+				<TextView
+					android:id="@+id/textview5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:layout_marginBottom="15dp"
+					android:gravity="right|center_vertical"
+					android:text="click here to Add pictures"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#F44336" />
+				<CheckBox
+					android:id="@+id/checkbox1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:layout_marginBottom="15dp"
+					android:gravity="right|center_vertical"
+					android:text="Agreed with terms of use"
+					android:textSize="12sp"
+					android:textColor="#9E9E9E" />
+				<LinearLayout
+					android:id="@+id/linear8"
+					android:layout_width="match_parent"
+					android:layout_height="48dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal" />
+				<TextView
+					android:id="@+id/textview6"
+					android:layout_width="match_parent"
+					android:layout_height="48dp"
+					android:padding="13dp"
+					android:background="#2196F3"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="register"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/textview7"
+					android:layout_width="match_parent"
+					android:layout_height="48dp"
+					android:layout_marginTop="15dp"
+					android:padding="13dp"
+					android:background="#EEEEEE"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="login"
+					android:textSize="14sp"
+					android:textColor="#616161" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
